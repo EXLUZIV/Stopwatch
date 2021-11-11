@@ -72,13 +72,8 @@ const reset = () => {
 	document.getElementById('display').innerHTML = "00:00:00:00";
 	document.getElementById('start').innerHTML = "Start";
 	status = 'stop';
-	document.getElementById('forLap').innerText = '';
 	i = 1;
 	document.querySelectorAll('.newLap').forEach(e => e.remove());
-	displayMilisecond = 0;
-	displaySecond = 0;
-	displayMinut = 0;
-	displayHour = 0;
 };
 let newLap = startLap = null;
 const lap = () => {
