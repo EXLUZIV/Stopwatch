@@ -12,6 +12,15 @@ let interval = null;
 let status = 'stop';
 let i = 1;
 
+window.onload = function () {
+	const startElement = document.querySelector('#start')
+	startElement.addEventListener('click', start)
+	const resetElement = document.querySelector('#reset')
+	resetElement.addEventListener('click', reset)
+	const lapElement = document.querySelector('#lap')
+	lapElement.addEventListener('click', lap)
+}
+
 const stopWatch = () => {
 	milisecond++;
 	if (milisecond / 60 === 1) {
